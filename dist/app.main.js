@@ -14,9 +14,9 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("\n\n__webpack_require__(/*! ./assets/style/style.css */ \"./src/assets/style/style.css\");\n\n//# sourceURL=webpack://JSCapstone-PlatformGame/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_style_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/style/style.css */ \"./src/assets/style/style.css\");\n\n\n//# sourceURL=webpack://JSCapstone-PlatformGame/./src/index.js?");
 
 /***/ }),
 
