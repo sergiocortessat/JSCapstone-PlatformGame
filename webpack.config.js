@@ -1,5 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   mode: 'development',
@@ -23,6 +25,10 @@ module.exports = {
             loader: 'babel-loader',
           },
         ],
+      },
+      {
+        test: [/\.vert$/, /\.frag$/],
+        use: "raw-loader"
       },
       {
         test: /\.css$/,
@@ -71,9 +77,14 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.DefinePlugin({
-      'typeof CANVAS_RENDERER': JSON.stringify(true),
-      'typeof WEBGL_RENDERER': JSON.stringify(true),
+    new CleanWebpackPlugin({
+      root: path.resolve(__dirname, "../")
     }),
+    new webpack.DefinePlugin({
+      CANVAS_RENDERER: JSON.stringify(true),
+      WEBGL_RENDERER: JSON.stringify(true)
+    }),
+    new HtmlWebpackPlugin({
+      template: "./index.html"
   ],
 };
