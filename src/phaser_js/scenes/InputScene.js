@@ -21,7 +21,7 @@ class InputScene extends Phaser.Scene {
     element.addListener('click');
 
     element.on('click', function (event) {
-      if this(event.target.name === 'loginButton') {
+      if (event.target.name === 'loginButton') {
         const inputUsername = this.getChildByName('username');
 
         //  Have they entered anything?

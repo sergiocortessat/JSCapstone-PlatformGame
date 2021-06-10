@@ -5,6 +5,7 @@ export default {
   width: 800,
   height: 600,
   parent: 'container',
+  backgroundColor: 0x8D1444,
   dom: {
     createContainer: true,
   },
