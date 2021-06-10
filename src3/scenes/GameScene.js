@@ -12,7 +12,6 @@ let gameOverText;
 let bombs;
 let gameOver = false;
 
-
 export default class GameScene extends Phaser.Scene {
   constructor() {
     super('Game');
@@ -26,7 +25,6 @@ export default class GameScene extends Phaser.Scene {
     this.load.image('bomb', 'assets/game/bomb.png');
     this.load.spritesheet('dude', 'assets/game/dude.png', { frameWidth: 32, frameHeight: 48 });
   }
-
 
   create() {
     this.add.image(400, 300, 'sky');
@@ -140,7 +138,6 @@ function collectStar(player, star) {
     bomb.allowGravity = false;
   }
 }
-
 
 function hitBomb(player, bomb) {
   const final = score;

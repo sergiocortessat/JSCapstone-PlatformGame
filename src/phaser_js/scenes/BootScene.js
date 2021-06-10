@@ -6,7 +6,7 @@ export default class BootScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('logo', 'assets/logo1.png');
+    this.load.image('logo', 'assets/atari-fujilogo.png');
   }
 
   create() {
