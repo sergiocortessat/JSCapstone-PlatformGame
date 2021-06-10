@@ -20,7 +20,6 @@ export default class TitleScene extends Phaser.Scene {
     // LeadBoard
     this.leadboardButton = new Button(this, config.width / 2, config.height / 2 + 150, 'blueButton1', 'blueButton2', 'Lead Board', 'LeaderBoard');
 
-
     this.model = this.sys.game.globals.model;
     if (this.model.musicOn === true && this.model.bgMusicPlaying === false) {
       this.bgMusic = this.sound.add('bgMusic', { volume: 0.5, loop: true });
@@ -37,6 +36,7 @@ export default class TitleScene extends Phaser.Scene {
     );
   }
 
+  // eslint-disable-next-line class-methods-use-this
   centerButtonText(gameText, gameButton) {
     Phaser.Display.Align.In.Center(
       gameText,
