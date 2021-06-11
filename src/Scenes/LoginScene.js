@@ -11,8 +11,8 @@ export default class LoginScene extends Phaser.Scene {
   }
 
   create() {
-    const text = this.add.text(500, 10, 'Please enter your name', { color: 'white', fontSize: '30px' });
-    const element = this.add.dom(400, 0).createFromCache('nameform');
+    const text = this.add.text(515, 10, 'Please enter your name', { color: 'white', fontSize: '26px' });
+    const element = this.add.dom(725, 0).createFromCache('nameform');
     element.addListener('click');
     element.on('click', function func(event) {
       if (event.target.name === 'playButton') {
@@ -20,7 +20,7 @@ export default class LoginScene extends Phaser.Scene {
         if (inputText.value !== '') {
           this.removeListener('click');
           this.setVisible(false);
-          text.setText(`player: ${inputText.value}`);
+          text.setText(`Current Player: ${inputText.value}`);
           gameConfig.user = inputText.value;
           window.game.scene.start('Title');
         } else {
