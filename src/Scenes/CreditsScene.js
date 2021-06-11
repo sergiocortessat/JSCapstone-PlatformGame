@@ -8,7 +8,7 @@ export default class CreditsScene extends Phaser.Scene {
 
   create() {
     this.creditsText = this.add.text(0, 0, 'Credits', { fontSize: '32px', fill: '#fff' });
-    this.madeByText = this.add.text(0, 0, 'Created By: Prajwal Thapa', { fontSize: '26px', fill: '#fff' });
+    this.madeByText = this.add.text(0, 0, 'Created By: Sergio Cortes S', { fontSize: '26px', fill: '#fff' });
     this.zone = this.add.zone(
       gameConfig.width / 2,
       gameConfig.height / 2,
@@ -36,8 +36,7 @@ export default class CreditsScene extends Phaser.Scene {
       delay: 1000,
       onComplete: this.destroy,
     });
-    this.scene.add('Options', OptionsScene);
-    this.scene.add('Credits', CreditsScene);
+
     /* eslint-disable no-unused-expressions */
 
     this.madeByTween = this.tweens.add({

@@ -23,7 +23,7 @@ export default class GameOverScene extends Phaser.Scene {
       config.width,
       config.height,
     );
-
+    this.scene.time.delayedCall(3000);
     this.restartButton = new Button(
       this,
       config.width / 2,
