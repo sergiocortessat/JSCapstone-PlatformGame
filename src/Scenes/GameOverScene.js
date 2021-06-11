@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
 import { gameConfig } from '../Config/config';
-import { sendScore } from '../leaderBoard';
+import { sendScore } from '../modules/data';
 import Button from '../Objects/Button';
 
 export default class GameOverScene extends Phaser.Scene {

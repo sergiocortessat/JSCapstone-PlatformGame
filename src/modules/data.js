@@ -1,51 +1,33 @@
-const data = (function () {
-  const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/pP2hIZr3M3n8eNSmS7oT/scores/';
-  const data = {};
-
-  async function post() {
-    const fullData = data;
-    try {
-      const response = await fetch(url, {
-        method: 'POST',
-        mode: 'cors',
-        headers: {
-          'content-type': 'application/json; charset=UTF-8',
-        },
-        body: JSON.stringify(fullData),
-      });
-      console.log('response Ok');
-      const data = await response.json();
-      return data;
-    } catch (err) {
-      throw new Error(`Could not reach the API: ${err}`);
-    }
+const URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/pUSZ5NTzWWRBiQrQHoFp/scores';
+const sendScore = async (name, score) => {
+  const response = await fetch(URL, {
+    method: 'POST',
+    mode: 'cors',
+    headers: {
+      Accept: 'Application/json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ user: name, score: Number(score) }),
+  });
+  if (response.ok) {
+    return response.json();
   }
+  throw new Error('Error!');
+};
 
-  async function get() {
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      return data;
-    } catch (err) {
-      throw new Error(`Somethig went wrong: ${err}`);
-    }
+const showScore = async () => {
+  const response = await fetch(URL, {
+    method: 'Get',
+    mode: 'cors',
+    headers: {
+      Accept: 'Application/json',
+      'Content-Type': 'application/json',
+    },
+  });
+  if (response.ok) {
+    return response.json();
   }
+  throw new Error('Error!');
+};
 
-  const nameSetter = (name) => {
-    data.user = name;
-  };
-
-  const scoreSetter = (score) => {
-    data.score = score;
-  };
-
-  return {
-    post,
-    get,
-    nameSetter,
-    scoreSetter,
-    data,
-  };
-}());
-
-export default data;
+export { sendScore, showScore };

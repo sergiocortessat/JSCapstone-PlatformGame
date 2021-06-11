@@ -1,6 +1,5 @@
 // import Data from '../modules/data';
 // import Board from '../modules/scoreBoard';
-// import { gameConfig } from '../Config/config';
 
 // export default class LeaderBoard extends Phaser.Scene {
 //   constructor() {
@@ -33,7 +32,7 @@
 
 import Phaser from 'phaser';
 import Button from '../Objects/Button';
-import { showScore } from '../leaderBoard';
+import { showScore } from '../modules/data';
 import { gameConfig } from '../Config/config';
 import board from '../modules/scoreBoard';
 
@@ -49,7 +48,7 @@ export default class leaderBoardScene extends Phaser.Scene {
   create() {
     const self = this;
 
-    this.add.text(gameConfig.width / 2.5, 55, 'Leader Board', { color: 'white', fontSize: '32px ' });
+    this.add.text(gameConfig.width / 2.55, 55, 'Leader Board', { color: 'white', fontSize: '32px ' });
 
     const element = this.add.dom(680, 180).createFromCache('leaderBoard');
 

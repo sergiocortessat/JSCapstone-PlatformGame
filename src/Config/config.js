@@ -5,7 +5,6 @@ const gameConfig = {
   parent: 'phaser-example',
   width: 1430,
   height: 680,
-  backgroundColor: 0x8B008B,
   dom: {
     createContainer: true,
   },
