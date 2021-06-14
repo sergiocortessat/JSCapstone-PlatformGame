@@ -25,7 +25,7 @@ describe('It testes configuration files for Phaser scripts', () => {
   });
 
   it('gives player jumpforce', () => {
-    expect(configOptions.gameOptions.jumpForce).toEqual(400);
+    expect(configOptions.gameOptions.jumpForce).toEqual(450);
     expect(configOptions.gameOptions.jumpForce).not.toBeLessThan(400);
   });
 

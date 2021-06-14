@@ -35,7 +35,7 @@ const gameOptions = {
 
   // jumpForce: 580,
 
-  jumpForce: 400,
+  jumpForce: 450,
 
   playerStartPosition: 200,
 
@@ -43,7 +43,7 @@ const gameOptions = {
 
   coinPercent: 25,
 
-  firePercent: 10,
+  firePercent: 20,
 };
 
 export { gameConfig, gameOptions };
