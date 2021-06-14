@@ -2,7 +2,8 @@
 
 
 ## Table of Contents
-  <br />
+
+<br />
 
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
@@ -26,25 +27,31 @@
 
 * [JAVASCRIPT] [PHASER] [WEBPACK] [PHASER_3] [LEADERBOARD_API]
 
+<br />
+
 ## Live Version
 
 * [Live Demo](https://sergiocortessat.github.io/JSCapstone-PlatformGame/) 
 
 <!-- ABOUT THE PROJECT   -->
+
+<br />
+
 ## About The Project
+
 - The Runner is an endless runner game where players run over some platforms and jump from ont platform to another.
 - The burning fires are presented as obstacles which must be dodged in order to continue the game.
 - There are also coins which can be collected to increase the score.  
- -The game ends once the user falls down the platform or gets burned by the fire.
-
+- The game ends once the user falls down the platform or gets burned by the fire.
 - You may find the original specifications for the game requirement can be found [here](https://www.notion.so/Platform-game-4a55a7d1fcc245bcb012c76814764712)
 
+<br />
 
-## Screenshot Test
+## Screenshot
 
 - Boot Scene
 
-<p align="Leader Boardcenter">
+<p align="center">
   <img height="auto" src="assets/img/boot.png">
 </p>
 
