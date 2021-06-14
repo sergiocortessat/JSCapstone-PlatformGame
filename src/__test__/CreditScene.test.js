@@ -1,12 +1,11 @@
-import { test } from 'jest-runtime/node_modules/@jest/globals';
-import CreditScene from '../Scenes/CreditsScene';
+import CreditsScene from '../Scenes/CreditsScene';
 
-jest.mock('../Scenes/CreditScene');
+jest.mock('../Scenes/CreditsScene');
 
 beforeEach(() => {
-  CreditScene.mockClear();
+  CreditsScene.mockClear();
 });
 
 test('Testing Credit Scenes', () => {
-  expect(new (CreditScene)()).toBeInstanceOf(CreditScene);
+  expect(new (CreditsScene)()).toBeInstanceOf(CreditsScene);
 });
