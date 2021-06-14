@@ -14,6 +14,7 @@ const sendScore = async (name, score) => {
   }
   throw new Error('Error!');
 };
+
 const showScore = async () => {
   const response = await fetch(URL, {
     method: 'Get',
@@ -29,4 +30,4 @@ const showScore = async () => {
   throw new Error('Error!');
 };
 
-export { sendScore, showScore };
+export { sendScore, showScore, URL };
