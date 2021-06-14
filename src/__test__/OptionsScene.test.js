@@ -1,7 +1,7 @@
-import GameOverScene from '../Scenes/GameOverScene';
+import OptionsScene from '../Scenes/OptionsScene';
 
-jest.mock('../Scenes/GameOverScene');
+jest.mock('../Scenes/OptionsScene');
 
-test('Testing the Game Over Scene', () => {
-  expect(new GameOverScene()).toBeInstanceOf(GameOverScene);
+test('Testing the Options menu Scene', () => {
+  expect(new OptionsScene()).toBeInstanceOf(OptionsScene);
 });
