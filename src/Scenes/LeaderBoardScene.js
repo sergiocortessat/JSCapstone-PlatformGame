@@ -31,7 +31,6 @@
 // }
 
 import Phaser from 'phaser';
-import Button from '../Objects/Button';
 import { showScore } from '../modules/data';
 import { gameConfig } from '../Config/config';
 import board from '../modules/scoreBoard';
