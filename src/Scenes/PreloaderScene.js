@@ -86,19 +86,19 @@ export default class PreloaderScene extends Phaser.Scene {
 
     this.load.image('platform', 'assets/platform.png');
     // player is a sprite sheet made by 52.26x48 pixels
-    this.load.spritesheet('player_run', 'assets/Sprites/Run.png', {
-      frameWidth: 250,
-      frameHeight: 173,
+    this.load.spritesheet('player_run', 'assets/Run.png', {
+      frameWidth: 52.26,
+      frameHeight: 48,
     });
 
-    this.load.spritesheet('player_jump', 'assets/Sprites/Jump.png', {
-      frameWidth: 250,
-      frameHeight: 173,
+    this.load.spritesheet('player_jump', 'assets/Jump.png', {
+      frameWidth: 52.26,
+      frameHeight: 48,
     });
 
-    this.load.spritesheet('player_dead', 'assets/Sprites/Death.png', {
-      frameWidth: 250,
-      frameHeight: 173,
+    this.load.spritesheet('player_dead', 'assets/Dead.png', {
+      frameWidth: 52.26,
+      frameHeight: 48,
     });
 
     // the coin is a sprite sheet made by 20x20 pixels
@@ -129,7 +129,7 @@ export default class PreloaderScene extends Phaser.Scene {
       key: 'run',
       frames: this.anims.generateFrameNumbers('player_run', {
         start: 0,
-        end: 7,
+        end: 14,
       }),
       frameRate: 20,
       repeat: -1,
@@ -140,7 +140,7 @@ export default class PreloaderScene extends Phaser.Scene {
       key: 'jump',
       frames: this.anims.generateFrameNumbers('player_jump', {
         start: 0,
-        end: 1,
+        end: 14,
       }),
       frameRate: 15,
       repeat: 0,
@@ -151,7 +151,7 @@ export default class PreloaderScene extends Phaser.Scene {
       key: 'dead',
       frames: this.anims.generateFrameNumbers('player_dead', {
         start: 0,
-        end: 6,
+        end: 14,
       }),
       frameRate: 15,
       repeat: 0,

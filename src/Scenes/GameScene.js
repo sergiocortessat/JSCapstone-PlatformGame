@@ -1,7 +1,6 @@
 import Phaser from 'phaser';
 import { gameOptions, gameConfig } from '../Config/config';
 
-
 export default class GameScene extends Phaser.Scene {
   constructor() {
     super('Game');
@@ -63,7 +62,7 @@ export default class GameScene extends Phaser.Scene {
       gameConfig.width / 2,
       gameConfig.height * gameOptions.platformVerticalLimit[1]);
 
-    this.player = this.physics.add.sprite(gameOptions.playerStartPosition, gameConfig.height * 0.1, 'player_run');
+    this.player = this.physics.add.sprite(gameOptions.playerStartPosition, gameConfig.height * 0.7, 'player_run');
     this.player.setGravityY(gameOptions.playerGravity);
     this.player.setDepth(2);
 
