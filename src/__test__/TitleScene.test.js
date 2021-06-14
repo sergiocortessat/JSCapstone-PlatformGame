@@ -1,7 +1,7 @@
-import GameOverScene from '../Scenes/GameOverScene';
+import TitleScene from '../Scenes/TitleScene';
 
-jest.mock('../Scenes/GameOverScene');
+jest.mock('../Scenes/TitleScene');
 
 test('Testing the Game Over Scene', () => {
-  expect(new GameOverScene()).toBeInstanceOf(GameOverScene);
+  expect(new TitleScene()).toBeInstanceOf(TitleScene);
 });
