@@ -119,7 +119,7 @@ export default class PreloaderScene extends Phaser.Scene {
     //   frameHeight: 512,
     // });
 
-    this.load.image('mountain', 'assets/purple2.png');
+    this.load.image('mountain', 'assets/shadow2.png');
 
     this.load.audio('bgMusic', ['assets/sound/TownTheme.mp3']);
     this.load.audio('pickup', ['assets/sound/pickup.mp3']);
