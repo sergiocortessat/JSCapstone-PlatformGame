@@ -1,5 +1,6 @@
 # Phaser Platform Game
 
+
 ## Table of Contents
   <br />
 
@@ -23,24 +24,74 @@
 
 ### Built With
 
-* [JAVASCRIPT] [PHASER] [WEBPACK]
+* [JAVASCRIPT] [PHASER] [WEBPACK] [PHASER_3] [LEADERBOARD_API]
 
 ## Live Version
 
-* [Live Demo](https://sergiocortessat.github.io/JS_ToDoList/) 
+* [Live Demo](https://sergiocortessat.github.io/JSCapstone-PlatformGame/) 
 
 <!-- ABOUT THE PROJECT   -->
 ## About The Project
-The To-Do-List web application allows users to set different projects (Lists name) and set different to-do items for each project individually. Each project can hold as many to-do-items as the user wishes. He can edit its information, mark each to-do task as completed, clear the completed tasks and delete the main project folder.
+- The Runner is an endless runner game where players run over some platforms and jump from ont platform to another.
+- The burning fires are presented as obstacles which must be dodged in order to continue the game.
+- There are also coins which can be collected to increase the score.  
+ -The game ends once the user falls down the platform or gets burned by the fire.
+
+- You may find the original specifications for the game requirement can be found [here](https://www.notion.so/Platform-game-4a55a7d1fcc245bcb012c76814764712)
 
 
 ## Screenshot Test
 
-<p align="center">
-  <img height="auto" src="Screenshot.png">
+- Boot Scene
+
+<p align="Leader Boardcenter">
+  <img height="auto" src="assets/img/boot.png">
 </p>
 
 
+- Login Scene
+
+<p align="center">
+  <img height="auto" src="assets/img/login.png">
+</p>
+
+- Menu Scene
+
+<p align="center">
+  <img height="auto" src="assets/img/menu.png">
+</p>
+
+
+- Game Scene
+
+<p align="center">
+  <img height="auto" src="assets/img/game.png">
+</p>
+
+
+- GameOver Scene
+
+<p align="center">
+  <img height="auto" src="assets/img/gameover.png">
+</p>
+
+
+- Leader Board Scene
+<p align="center">
+  <img height="auto" src="assets/img/leaderboard.png">
+</p>
+
+
+- Credits Scene
+<p align="center">
+  <img height="auto" src="assets/img/credits.png">
+</p>
+
+
+- Options Scene
+<p align="center">
+  <img height="auto" src="assets/img/options.png">
+</p>
 
 ## Contributing
 
@@ -57,17 +108,17 @@ Terminal or similar to execute the program.
 ## Clone project
 
 - To get a local copy up and running follow these simple example steps.
-- Clone this repository with git clone ```https://github.com/sergiocortessat/JS_ToDoList``` using your terminal or command line.
-- Change to the project directory by entering: ```cd JS_ToDoList``` in the terminal.
+- Clone this repository with git clone ```https://github.com/sergiocortessat/JSCapstone-PlatformGame/tree/feature``` using your terminal or command line.
+- Change to the project directory by entering: ```cd JSCapstone-PlatformGame``` in the terminal.
 - Enter the command npm i
 - Enter the project folder and run locally by using npm start.
 - If the project cant be build, please run npx webpack.
 
 ## Command line steps
 ```
-- $ git clone `$ git clone https://github.com/sergiocortessat/JS_ToDoList
+- $ git clone `$ git clone https://github.com/sergiocortessat/JSCapstone-PlatformGame/tree/feature
 - $ git checkout develop
-- $ cd JS_ToDoList
+- $ cd JSCapstone-PlatformGame
 - $ npm i
 - $ npm start
 - ##(If project doesn't build, please run): $ npx webpack
@@ -82,10 +133,12 @@ The testing has been performed using Jest.
 - Enter npm run watch to keep jest test open
 
 ```
-- $ cd JS_ToDoList
+- $ cd JSCapstone-PlatformGame
 - $ npm run test
 - $ npm run watch  (optional)
+
 ```
+![Tests](assets/img/test.png)
 
 ## Authors
 
@@ -100,6 +153,9 @@ The testing has been performed using Jest.
 ## Acknowledgements
 
 * [Microverse](https://www.microverse.org/)
+* [Phaser](https://phaser.io/)
+* [OpenGameArt](https://opengameart.org/)
+* [Game Art 2D](https://www.gameart2d.com/freebies.html)
 
 
 ## 📝 License
