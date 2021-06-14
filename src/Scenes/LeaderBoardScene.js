@@ -33,7 +33,7 @@
 import Phaser from 'phaser';
 import { showScore } from '../modules/data';
 import { gameConfig } from '../Config/config';
-import board from '../modules/scoreBoard';
+import board from '../modules/scoreBoardPushDom';
 
 export default class leaderBoardScene extends Phaser.Scene {
   constructor() {

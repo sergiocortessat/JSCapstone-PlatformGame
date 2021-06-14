@@ -86,17 +86,17 @@ export default class PreloaderScene extends Phaser.Scene {
 
     this.load.image('platform', 'assets/platform.png');
     // player is a sprite sheet made by 52.26x48 pixels
-    this.load.spritesheet('player_run', 'assets/Run.png', {
+    this.load.spritesheet('player_run', 'assets/player_run.png', {
       frameWidth: 52.26,
       frameHeight: 48,
     });
 
-    this.load.spritesheet('player_jump', 'assets/Jump.png', {
+    this.load.spritesheet('player_jump', 'assets/player_jump.png', {
       frameWidth: 52.26,
       frameHeight: 48,
     });
 
-    this.load.spritesheet('player_dead', 'assets/Dead.png', {
+    this.load.spritesheet('player_dead', 'assets/player_dead.png', {
       frameWidth: 52.26,
       frameHeight: 48,
     });
