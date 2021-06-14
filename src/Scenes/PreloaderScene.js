@@ -114,15 +114,12 @@ export default class PreloaderScene extends Phaser.Scene {
     });
 
     // mountains are a sprite sheet made by 512x512 pixels
-    this.load.spritesheet('mountain', 'assets/mountain.png', {
-      frameWidth: 512,
-      frameHeight: 512,
-    });
-
-    // this.load.spritesheet('mountain', 'assets/BG.png', {
-    //   frameWidth: 650,
-    //   frameHeight: 450,
+    // this.load.spritesheet('mountain', 'assets/mountain.png', {
+    //   frameWidth: 512,
+    //   frameHeight: 512,
     // });
+
+    this.load.image('mountain', 'assets/purple2.png');
 
     this.load.audio('bgMusic', ['assets/sound/TownTheme.mp3']);
     this.load.audio('pickup', ['assets/sound/pickup.mp3']);
@@ -188,10 +185,10 @@ export default class PreloaderScene extends Phaser.Scene {
   }
 
   ready() {
-    this.scene.start('Login');
+    this.scene.start('Game');
     this.readyCount += 1;
     if (this.readyCount === 2) {
-      this.scene.start('Login');
+      this.scene.start('Game');
     }
   }
 }
