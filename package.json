@@ -57,6 +57,7 @@
     "webpack-merge": "^5.3.0"
   },
   "dependencies": {
+    "@jest/globals": "^27.0.3",
     "date-fns": "^2.21.3",
     "jsdom": "^16.6.0",
     "phaser": "^3.55.2",
