@@ -22,7 +22,7 @@ export default class LoginScene extends Phaser.Scene {
           this.setVisible(false);
           text.setText(`Current Player: ${inputText.value}`);
           gameConfig.user = inputText.value;
-          window.game.scene.start('Options');
+          window.game.scene.start('Title');
         } else {
           this.scene.tweens.add({
             targets: text,
