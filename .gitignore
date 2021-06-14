@@ -1,4 +1,3 @@
 node_modules/
-src3/
-src4/
-src_copy/
+.src3/
+.src4/
