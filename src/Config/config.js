@@ -31,7 +31,9 @@ const gameOptions = {
 
   playerGravity: 900,
 
-  jumpForce: 580,
+  // jumpForce: 580,
+
+  jumpForce: 400,
 
   playerStartPosition: 200,
 
