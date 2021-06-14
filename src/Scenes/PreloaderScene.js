@@ -101,7 +101,6 @@ export default class PreloaderScene extends Phaser.Scene {
       frameHeight: 173,
     });
 
-
     // the coin is a sprite sheet made by 20x20 pixels
     this.load.spritesheet('coin', 'assets/coin.png', {
       frameWidth: 20,
