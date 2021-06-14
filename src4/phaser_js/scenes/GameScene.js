@@ -8,7 +8,6 @@ import Phaser from 'phaser';
 import gameOptions from '../config/gameOptions';
 import config from '../config/config';
 
-
 export default class GameScene extends Phaser.Scene {
   constructor() {
     super('Game');

@@ -11,10 +11,6 @@ import GameScene from './Scenes/GameScene';
 import GameOverScene from './Scenes/GameOverScene';
 import leaderBoardScene from './Scenes/LeaderBoardScene';
 
-
-
-
-
 class Game extends Phaser.Game {
   constructor() {
     super(gameConfig);

@@ -1,7 +1,6 @@
 import Phaser from 'phaser';
 import { gameOptions, gameConfig } from '../Config/config';
 
-
 export default class GameScene extends Phaser.Scene {
   constructor() {
     super('Game');

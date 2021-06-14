@@ -15,7 +15,6 @@ class InputScene extends Phaser.Scene {
 
     const element = this.add.dom(400, 600).createFromCache('nameform');
 
-
     element.setPerspective(800);
 
     element.addListener('click');
