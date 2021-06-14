@@ -9,8 +9,9 @@ const gameConfig = {
     createContainer: true,
   },
   physics: {
+    // default: 'arcade',
+    // arcade: { debug: true },
     default: 'arcade',
-    arcade: { debug: true },
   },
   user: '',
 };
