@@ -106,7 +106,7 @@ export default class GameScene extends Phaser.Scene {
 
     this.input.on('pointerdown', this.jump, this);
 
-    this.scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
+    this.scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#fff' });
   }
 
   addMountains() {

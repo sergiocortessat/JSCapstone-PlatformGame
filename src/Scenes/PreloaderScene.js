@@ -11,13 +11,13 @@ export default class PreloaderScene extends Phaser.Scene {
 
   preload() {
     // add logo image
-    this.add.image(725, 100, 'logo');
+    this.add.image(650, 100, 'logo');
 
     // display progress bar
     const progressBar = this.add.graphics();
     const progressBox = this.add.graphics();
     progressBox.fillStyle(0x222222, 0.8);
-    progressBox.fillRect(550, 310, 320, 50);
+    progressBox.fillRect(480, 310, 320, 50);
 
     const { width } = this.cameras.main;
     const { height } = this.cameras.main;
@@ -59,7 +59,7 @@ export default class PreloaderScene extends Phaser.Scene {
       percentText.setText(`${parseInt(value * 100, 10)}%`);
       progressBar.clear();
       progressBar.fillStyle(0xffffff, 1);
-      progressBar.fillRect(560, 320, 300 * value, 30);
+      progressBar.fillRect(490, 320, 300 * value, 30);
     });
 
     // update file progress text
@@ -120,7 +120,7 @@ export default class PreloaderScene extends Phaser.Scene {
     // });
 
     this.load.image('mountain', 'assets/shadow2.png');
-    this.background1 = this.add.tileSprite(400, 300, 700, 100, 'mountain');
+    // this.background1 = this.add.tileSprite(400, 300, 700, 100, 'mountain');
 
     this.load.audio('bgMusic', ['assets/sound/TownTheme.mp3']);
     this.load.audio('pickup', ['assets/sound/pickup.mp3']);
@@ -186,10 +186,10 @@ export default class PreloaderScene extends Phaser.Scene {
   }
 
   ready() {
-    this.scene.start('Game');
+    this.scene.start('Login');
     this.readyCount += 1;
     if (this.readyCount === 2) {
-      this.scene.start('Game');
+      this.scene.start('Login');
     }
   }
 }

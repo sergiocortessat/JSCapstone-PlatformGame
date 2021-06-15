@@ -11,8 +11,8 @@ export default class LoginScene extends Phaser.Scene {
   }
 
   create() {
-    const text = this.add.text(515, 10, 'Please enter your name', { color: 'white', fontSize: '26px' });
-    const element = this.add.dom(725, 0).createFromCache('nameform');
+    const text = this.add.text(510, 10, 'Please enter your name', { color: 'white', fontSize: '26px' });
+    const element = this.add.dom(710, 0).createFromCache('nameform');
     element.addListener('click');
     element.on('click', function func(event) {
       if (event.target.name === 'playButton') {
