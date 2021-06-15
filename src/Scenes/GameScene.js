@@ -110,27 +110,7 @@ export default class GameScene extends Phaser.Scene {
   }
 
   addMountains() {
-    // const rightmostMountain = this.getRightmostMountain();
-    // if (rightmostMountain < gameConfig.width * 2) {
-    //   const mountain = this.physics.add.sprite(rightmostMountain + Phaser.Math.Between(100, 350), gameConfig.height + Phaser.Math.Between(0, 100), 'mountain');
-    //   mountain.setOrigin(0.5, 1);
-    //   mountain.body.setVelocityX(gameOptions.mountainSpeed * -1);
-    //   this.mountainGroup.add(mountain);
-    //   if (Phaser.Math.Between(0, 1)) {
-    //     mountain.setDepth(1);
-    //   }
-    //   mountain.setFrame(Phaser.Math.Between(0, 3));
-    //   this.addMountains();
-    // }
     this.mountain = this.physics.add.image(650, 300, 'mountain');
-  }
-
-  getRightmostMountain() {
-    let rightmostMountain = -200;
-    this.mountainGroup.getChildren().forEach((mountain) => {
-      rightmostMountain = Math.max(rightmostMountain, mountain.x);
-    });
-    return rightmostMountain;
   }
 
   addPlatform(platformWidth, posX, posY) {
