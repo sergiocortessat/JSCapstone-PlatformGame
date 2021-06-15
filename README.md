@@ -39,9 +39,9 @@
 
 ## About The Project
 
-- The Runner is an endless runner game where players run over some platforms and jump from ont platform to another.
-- The burning fires are presented as obstacles which must be dodged in order to continue the game.
-- There are also coins which can be collected to increase the score.  
+- The Runner is an endless runner game where players run over some platforms and jump from one platform to another.
+- The burning fires are presented as obstacles that must be dodged to continue the game.
+- Coins can be collected to increase the score.  
 - The game ends once the user falls down the platform or gets burned by the fire.
 - You may find the original specifications for the game requirement can be found [here](https://www.notion.so/Platform-game-4a55a7d1fcc245bcb012c76814764712)
 
