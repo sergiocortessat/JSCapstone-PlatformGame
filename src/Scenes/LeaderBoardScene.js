@@ -19,7 +19,7 @@ export default class leaderBoardScene extends Phaser.Scene {
 
     // const element = this.add.dom(640, 180).createFromCache('leaderBoard');
 
-    this.add.text(gameConfig.width / 2.25, 55, 'Leader Board', { color: 'white', fontSize: '32px ' });
+    this.add.text(gameConfig.width / 2.30, 55, 'Leader Board', { color: 'white', fontSize: '32px ' });
 
     const element = this.add.dom(680, 180).createFromCache('leaderBoard');
 

@@ -2,7 +2,7 @@ import * as configOptions from '../Config/config';
 
 describe('It testes configuration files for Phaser scripts', () => {
   it('returns screen width', () => {
-    expect(configOptions.gameConfig.width).toBe(1430);
+    expect(configOptions.gameConfig.width).toBe(1300);
   });
 
   it('returns screen height', () => {
