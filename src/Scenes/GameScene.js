@@ -88,7 +88,7 @@ export default class GameScene extends Phaser.Scene {
         callbackScope: this,
         onComplete() {
           this.score += 1;
-          this.scoreText.setText(`Score: ${this.score}`);
+          this.scoreText.setText(`${gameConfig.user}'s Score: ${this.score}`);
           this.coinGroup.killAndHide(coin);
           this.coinGroup.remove(coin);
         },
@@ -106,7 +106,7 @@ export default class GameScene extends Phaser.Scene {
 
     this.input.on('pointerdown', this.jump, this);
 
-    this.scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#fff' });
+    this.scoreText = this.add.text(16, 16, `${gameConfig.user}'s Score: ${this.score}`, { fontSize: '32px', fill: '#fff' });
   }
 
   addMountains() {
