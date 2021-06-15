@@ -197,7 +197,11 @@ export default class GameScene extends Phaser.Scene {
   }
 
   update() {
-    if (this.player.y > gameConfig.height) {
+    if (this.player.y > gameConfig.height + 1) {
+      if (!this.dying) {
+        this.dieMusic = this.sound.add('dead', { volume: 0.5, loop: false });
+        this.dieMusic.play();
+      }
       this.scene.start('GameOver', { user: gameConfig.user, score: this.score });
     }
 
