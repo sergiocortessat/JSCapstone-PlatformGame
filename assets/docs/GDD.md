@@ -1,17 +1,17 @@
 ## Game Development
-- This game has been developed in various stages. First of all, the basic knowledge about phaser 3 library, its instruction sets and working mechanism was obtained by visiting the [phaser](https://phaser.io/) website, [phaser tutorials](https://phaser.io/tutorials/getting-started-phaser3), and [phaser documentation](https://photonstorm.github.io/phaser3-docs/).  
-- The basic concept for this game has been take from [this](https://www.emanueleferonato.com/tag/endless-runner/) tutorial.
+- This game has been developed in various stages. First of all, the basic knowledge about phaser 3 library, its instruction sets, and the working mechanism was obtained by visiting [phaser](https://phaser.io/) website, [phaser tutorials](https://phaser.io/tutorials/getting-started-phaser3), and [phaser documentation](https://photonstorm.github.io/phaser3-docs/).  
+- The basic concept for this game has been taken from [this](https://www.emanueleferonato.com/tag/endless-runner/) tutorial.
 
-- The game was developed in 5 working days in following pattern:
+- The game was developed in 5 working days using the following pattern:
 
-  - Day 1: Learning about Phaser Library, following the tutorials, setup development environment and creating a basic template for the game.
-  - Day 2: Designing game, collecting the assets and writing this GDD.
-  - Day 3: Creating various scenes such as boot scene, preloader scene, title scene etc. for the project including the main game scene and adding player.
-  - Day 4: Making the player jump, double jump and adding fire as obstacle and coins as collectable items.
-  - Day 5: Prepare leaderbaord feature with leaderbaord API, testing game, fixing bugs and deployment.
+  - Day 1: Learning about Phaser Library, following the tutorials, setup the development environment, and creating a basic template for the game.
+  - Day 2: Designing the game, collecting the assets, and writing this GDD.
+  - Day 3: Creating various scenes such as boot scene, preloader scene, title scene, etc. for the project including the main game scene and adding a player.
+  - Day 4: Making the player jump, double jump, and adding fire as an obstacle and coins as collectible items.
+  - Day 5: Prepare leaderboard feature with leaderboard API, testing game, fixing bugs, and deployment.
 
 ### Game Levels
-- There are not any specific levels in the game, since it is the infinite runner game, the player is expected to run as far as possible jumping over the platforms, dodging the obstacles(fires) and collecting the coins.
+- There are not any specific levels in the game, since it is the infinite runner game, the player is expected to run as far as possible jumping over the platforms, dodging the obstacles(fires), and collecting the coins.
 
 ### Assets
 - The assets used in this game (sound effects, background music, animation sprites) have been take from [OpenGameArt](https://opengameart.org/), [Freesound.org](https://freesound.org/) and [Game Art 2D](https://www.gameart2d.com/freebies.html).
