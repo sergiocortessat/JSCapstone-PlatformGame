@@ -120,6 +120,7 @@ export default class PreloaderScene extends Phaser.Scene {
     // });
 
     this.load.image('mountain', 'assets/shadow2.png');
+    this.background1 = this.add.tileSprite(400, 300, 700, 100, 'mountain');
 
     this.load.audio('bgMusic', ['assets/sound/TownTheme.mp3']);
     this.load.audio('pickup', ['assets/sound/pickup.mp3']);
