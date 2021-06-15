@@ -1,4 +1,4 @@
-# Phaser Platform Game
+# Wizard Runner
 
 
 ## Table of Contents
@@ -7,17 +7,17 @@
 
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
+* [How to play](#how-to-play) 
 * [Contributing](#contributing)
 * [Contact](#authors)
 * [Acknowledgements](#acknowledgements) 
 * [Getting Started](#getting-started) 
-* [Live Demo and Video](#live-version) 
+* [Live Demo](#live-version) 
 
 #
 <br />
 
 ![Javascript](https://img.shields.io/badge/Javascript-3776AB?style=for-the-badge&logo=javascript&logoColor=white) <br/>
-![Bootstrap](https://img.shields.io/badge/Bootstrap-092E20?style=for-the-badge&logo=bootstrap&logoColor=white) <br/>
 ![Phaser](https://img.shields.io/badge/phaser-092E20?style=for-the-badge&logo=phaser&logoColor=white) <br/>
 
 
@@ -25,7 +25,7 @@
 
 ### Built With
 
-* [JAVASCRIPT] [PHASER] [WEBPACK] [PHASER_3] [LEADERBOARD_API]
+* [JAVASCRIPT] [PHASER] [WEBPACK] [LEADERBOARD_API]
 
 <br />
 
@@ -46,6 +46,20 @@
 - You may find the original specifications for the game requirement can be found [here](https://www.notion.so/Platform-game-4a55a7d1fcc245bcb012c76814764712)
 
 <br />
+
+## How To Play
+
+```
+The rules for this game are rather simple
+1. Tap or Click to jump.
+2. Tap or Click again for a double jump
+2. Jump and dodge the fire to stay alive.
+3. Jump on the platforms and do not fall down.
+4. Collect the coins to increase your score.
+
+```
+
+<br/>
 
 ## Screenshot
 
@@ -133,7 +147,7 @@ Terminal or similar to execute the program.
 
 ## Testing
 
-The testing has been performed using Jest. 
+The testing has been performed using Jest Framework. 
 
 - To run the test please open the command line
 - Enter npm run test to run the testing once.
@@ -146,6 +160,13 @@ The testing has been performed using Jest.
 
 ```
 ![Tests](assets/img/test.png)
+
+
+
+## Game Development
+- The Game Design Document for this project can be found [here](assets/docs/GDD.md)
+
+<br />
 
 ## Authors
 
