@@ -174,7 +174,7 @@ The testing has been performed using Jest Framework.
 
 - Github: [@sergiocortessat](https://github.com/sergiocortessat)
 - Twitter: [@sergiocortessat](https://twitter.com/sergiocortessat)
-- LinkedIn: [@sergiocortessat](www.linkedin.com/in/sergio-cortes-satizabal-3b452194)
+- LinkedIn: [@sergiocortessat](https://linkedin.com/in/sergiocortessat)
 
 
 <!-- ACKNOWLEDGEMENTS -->
