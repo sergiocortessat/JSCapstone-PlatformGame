@@ -38,7 +38,7 @@ describe('It testes configuration files for Phaser scripts', () => {
 
   it('returns platform spawn range', () => {
     expect(configOptions.gameOptions.spawnRange).toStrictEqual([80, 300]);
-    expect(configOptions.gameOptions.spawnRange).not.toStrictEqual([80, 300]);
+    expect(configOptions.gameOptions.spawnRange).not.toStrictEqual([90, 290]);
   });
 
   it('gives minimum limit to platform spawn rate', () => {
