@@ -25,3 +25,91 @@
 
 ### API
 - The Score submission and LeaderBoard retrieval feature has been implemented using [this](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3) API service.
+
+
+### Character Information
+
+- The character is called Dark Wizard, playing within a runner game.
+- The character has the ability to run, jum and die.
+- The character has a voice for a death status.
+
+### Game Environment
+
+- The main setup of Phaser is done with a screen size of 1300 * 600 Pixels
+- The initial setup nof the game applies a 20% rate of fire and a 25% ratio of coins
+- The setup allows the user to jump on a physical height of 450
+
+### About The Game
+
+- The Runner is an endless runner game where players run over some platforms and jump from one platform to another.
+- The burning fires are presented as obstacles that must be dodged to continue the game.
+- Coins can be collected to increase the score.  
+- The game ends once the user falls down the platform or gets burned by the fire.
+- You may find the original specifications for the game requirement can be found [here](https://www.notion.so/Platform-game-4a55a7d1fcc245bcb012c76814764712)
+
+
+### How To Play
+
+```
+The rules for this game are rather simple
+1. Tap or Click to jump.
+2. Tap or Click again for a double jump
+2. Jump and dodge the fire to stay alive.
+3. Jump on the platforms and do not fall down.
+4. Collect the coins to increase your score.
+```
+
+<br/>
+
+## Screenshot
+
+- Boot Scene
+
+<p align="center">
+  <img height="auto" src="../img/boot.png">
+</p>
+
+
+- Login Scene
+
+<p align="center">
+  <img height="auto" src="../img/login.png">
+</p>
+
+- Menu Scene
+
+<p align="center">
+  <img height="auto" src="../img/menu.png">
+</p>
+
+
+- Game Scene
+
+<p align="center">
+  <img height="auto" src="../img/game.png">
+</p>
+
+
+- GameOver Scene
+
+<p align="center">
+  <img height="auto" src="../img/gameover.png">
+</p>
+
+
+- Leader Board Scene
+<p align="center">
+  <img height="auto" src="../img/leaderboard.png">
+</p>
+
+
+- Credits Scene
+<p align="center">
+  <img height="auto" src="../img/credits.png">
+</p>
+
+
+- Options Scene
+<p align="center">
+  <img height="auto" src="../img/options.png">
+</p>
