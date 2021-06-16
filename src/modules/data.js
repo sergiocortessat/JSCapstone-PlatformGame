@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 const URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/v7ufg7BhT7XQTae6jSvX/scores';
 const sendScore = async (name, score) => {
   try {
@@ -13,8 +14,8 @@ const sendScore = async (name, score) => {
     if (response.ok) {
       return response.json();
     }
-  } catch (err) {
-    throw new Error(err);
+  } catch (error) {
+    return new Error(error);
   }
 };
 
@@ -31,8 +32,8 @@ const showScore = async () => {
     if (response.ok) {
       return response.json();
     }
-  } catch (err) {
-    throw new Error(err);
+  } catch (error) {
+    return new Error(error);
   }
 };
 
