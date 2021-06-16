@@ -9,7 +9,7 @@ describe('LeaderBoard', () => {
   });
 
   test('Not receiving information from API to populate table', () => {
-    Score.sendScore('Praz', 57).then((result) => {
+    Score.sendScore('Test', 57).then((result) => {
       expect(typeof result).not.toBe('JSON');
     }).catch((err) => err);
   });
@@ -21,7 +21,7 @@ describe('LeaderBoard', () => {
   });
 
   test('it should not send player name and score', () => {
-    Score.sendScore('Thapa', 62).then((result) => {
+    Score.sendScore('Test', 62).then((result) => {
       expect(result.result).not.toBe('Leaderboard score created correctly.');
     }).catch((err) => err);
   });
