@@ -22,10 +22,3 @@ describe('LeaderBoard', () => {
     }).catch((err) => err);
   });
 });
-
-// test('testing testing', async () => {
-//   const x = await Score.showScore;
-//   expect.assertions(1);
-//   return expect(x()).resolves.not.toEqual('Paul');
-// });
-//
