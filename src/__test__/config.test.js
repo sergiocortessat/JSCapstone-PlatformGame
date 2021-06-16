@@ -3,10 +3,12 @@ import * as configOptions from '../Config/config';
 describe('It testes configuration files for Phaser scripts', () => {
   it('returns screen width', () => {
     expect(configOptions.gameConfig.width).toBe(1300);
+    expect(configOptions.gameConfig.width).not.toBe(1430);
   });
 
   it('returns screen height', () => {
     expect(configOptions.gameConfig.height).toBe(680);
+    expect(configOptions.gameConfig.height).not.toBe(550);
   });
 
   it('returns platform speed', () => {
@@ -36,6 +38,7 @@ describe('It testes configuration files for Phaser scripts', () => {
 
   it('returns platform spawn range', () => {
     expect(configOptions.gameOptions.spawnRange).toStrictEqual([80, 300]);
+    expect(configOptions.gameOptions.spawnRange).not.toStrictEqual([80, 300]);
   });
 
   it('gives minimum limit to platform spawn rate', () => {
