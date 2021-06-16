@@ -84,7 +84,7 @@ export default class PreloaderScene extends Phaser.Scene {
     this.load.image('box', 'assets/ui/grey_box.png');
     this.load.image('checkedBox', 'assets/ui/blue_boxCheckmark.png');
 
-    this.load.image('platform', 'assets/platform.png');
+    this.load.image('platform', 'assets/Sprites/platform.png');
     // player is a sprite sheet made by 52.26x48 pixels
     this.load.spritesheet('player_run', 'assets/Sprites/Run.png', {
       frameWidth: 250,
@@ -102,18 +102,18 @@ export default class PreloaderScene extends Phaser.Scene {
     });
 
     // the coin is a sprite sheet made by 20x20 pixels
-    this.load.spritesheet('coin', 'assets/coin.png', {
+    this.load.spritesheet('coin', 'assets/Sprites/coin.png', {
       frameWidth: 20,
       frameHeight: 20,
     });
 
     // the firecamp is a sprite sheet made by 32x58 pixels
-    this.load.spritesheet('fire', 'assets/fire.png', {
+    this.load.spritesheet('fire', 'assets/Sprites/fire.png', {
       frameWidth: 40,
       frameHeight: 70,
     });
 
-    this.load.image('mountain', 'assets/shadow2.png');
+    this.load.image('mountain', 'assets/Sprites/BackgroundShadow2.png');
 
     this.load.audio('bgMusic', ['assets/sound/TechnoBackground.mp3']);
     this.load.audio('pickup', ['assets/sound/pickup2.wav']);

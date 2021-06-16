@@ -9,3 +9,7 @@ beforeEach(() => {
 test('Testing Credit Scenes', () => {
   expect(new (CreditsScene)()).toBeInstanceOf(CreditsScene);
 });
+
+test('Testing Credit Scenes', () => {
+  expect(new (CreditsScene)()).not.toBe(typeof Function);
+});

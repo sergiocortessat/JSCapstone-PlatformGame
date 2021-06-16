@@ -9,8 +9,6 @@ const gameConfig = {
     createContainer: true,
   },
   physics: {
-    // default: 'arcade',
-    // arcade: { debug: true },
     default: 'arcade',
   },
   user: '',
@@ -32,8 +30,6 @@ const gameOptions = {
   platformVerticalLimit: [0.4, 0.8],
 
   playerGravity: 900,
-
-  // jumpForce: 580,
 
   jumpForce: 450,
 

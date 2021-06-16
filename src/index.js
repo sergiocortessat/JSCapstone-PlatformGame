@@ -10,7 +10,6 @@ import CreditsScene from './Scenes/CreditsScene';
 import GameScene from './Scenes/GameScene';
 import GameOverScene from './Scenes/GameOverScene';
 import leaderBoardScene from './Scenes/LeaderBoardScene';
-// import * as api from './modules/apiCreation';
 
 class Game extends Phaser.Game {
   constructor() {
@@ -29,5 +28,5 @@ class Game extends Phaser.Game {
     this.scene.start('Boot');
   }
 }
-// api.fetch();
+
 window.game = new Game();
