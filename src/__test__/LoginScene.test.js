@@ -6,7 +6,7 @@ describe('It testes the Log in Scene', () => {
     expect(new LoginScene()).toBeInstanceOf(LoginScene);
   });
 
-  test('Testing the main Log in Scene does belong only to it object instance', () => {
+  test('Testing the Log in Scene does belong only to it object instance', () => {
     expect(new (LoginScene)()).not.toBe(typeof Function);
   });
 });
